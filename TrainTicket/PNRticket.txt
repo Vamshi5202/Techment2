@@ -1,0 +1,14 @@
+PNR           : BD_10112021_100
+Train no      : 1001
+Train name   : Shatabdi Express
+
+From       : Banglore
+To           : Delhi
+Travel Date    : 10/11/2021
+
+
+Passengers  
+Name		Age		Gender		Fare  
+l	14			m			2500.0
+
+Total Fare : 2500.0
