@@ -1,5 +1,6 @@
 package com.techment.streamcasestudy;
 
+import java.sql.Date;
 import java.time.LocalDate;
 
 public class Employee {
@@ -8,16 +9,14 @@ private String firstName;
 private String lastName;
 private String email;
 private String phoneNumber;
-private LocalDate hireDate;
+private Date hireDate;
 private String designation;
 private double salary;
 private int managerId;
 private Department deparatment;
 
-public Employee() {
-	super();
-}
-public Employee(int employeeId, String firstName, String lastName, String email, String phoneNumber, LocalDate hireDate,
+
+public Employee(int employeeId, String firstName, String lastName, String email, String phoneNumber, Date hireDate,
 		String designation, double salary, int managerId, Department deparatment) {
 	super();
 	this.employeeId = employeeId;
@@ -61,10 +60,10 @@ public String getPhoneNumber() {
 public void setPhoneNumber(String phoneNumber) {
 	this.phoneNumber = phoneNumber;
 }
-public LocalDate getHireDate() {
+public Date getHireDate() {
 	return hireDate;
 }
-public void setHireDate(LocalDate hireDate) {
+public void setHireDate(Date hireDate) {
 	this.hireDate = hireDate;
 }
 public String getDesignation() {
@@ -90,6 +89,12 @@ public Department getDeparatment() {
 }
 public void setDeparatment(Department deparatment) {
 	this.deparatment = deparatment;
+}
+@Override
+public String toString() {
+	return "Employee [employeeId=" + employeeId + ", firstName=" + firstName + ", lastName=" + lastName + ", email="
+			+ email + ", phoneNumber=" + phoneNumber + ", hireDate=" + hireDate + ", designation=" + designation
+			+ ", salary=" + salary + ", managerId=" + managerId + ", deparatment=" + deparatment + "]";
 }
 
 
