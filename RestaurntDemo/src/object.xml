@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"> 
+               
+     
+     <bean id="r" class="com.techment.modal.Restaurnt">
+     <property name="restaurntName" value="Lucky"></property>
+     
+     <property name="hotDrink" ref="c"></property>
+     <property name="softDrink" ref="maaza"></property>
+     </bean>
+     <bean id="t" class="com.techment.modal.Tea">
+     <property name="price" value="12"></property>
+     </bean>
+     <bean id="c" class="com.techment.modal.Coffee">
+     </bean>
+     <bean id="ml" class="com.techment.modal.Milk">
+     </bean>
+     <bean id="maaza" class="com.techment.modal.Maaza">
+     </bean>
+     <bean id="pepsi" class="com.techment.modal.Pepsi">
+     </bean>
+</beans> 
