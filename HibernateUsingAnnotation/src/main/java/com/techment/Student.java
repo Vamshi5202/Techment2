@@ -5,7 +5,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="student500")
+@Table(name="student")
 public class Student {
 @Id
 int studentId;
@@ -28,6 +28,10 @@ public String getDept() {
 }
 public void setDept(String dept) {
 	this.dept = dept;
+}
+@Override
+public String toString() {
+	return "Student [studentId=" + studentId + ", name=" + name + ", dept=" + dept + "]";
 }
 
 
