@@ -14,8 +14,8 @@ public class Client {
 		
 
 		Product product = new Product();
-		product.setId(9);
-		product.setName("phone");
+		product.setId(10);
+		product.setName("redmi");
 		product.setCategory("electronics");
 		product.setPrice(30000);
         em.persist(product);
